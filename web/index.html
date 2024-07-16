@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gambar Tanpa Alt Attributes</title>
+	</head>
+	<body>
+		<div class="explanation">
+			<div class="explanation-text">
+				<h2>
+					Kenapa
+					<a href="https://en.wikipedia.org/wiki/Alt_attribute">
+						<code>
+							Alt
+						</code>
+						attribute
+					</a>
+					itu penting untuk aksesibilitas?
+				</h2>
+
+				<p>
+					<code>
+						Alt
+					</code>
+					attribute berfungsi untuk mendeskripsikan sebuah gambar apabila gambar
+					tersebut gagal ditampilkan atau ketika pengguna menggunakan
+					<a href="https://en.wikipedia.org/wiki/Screen_reader"
+						>Screen Reader</a
+					>
+				</p>
+
+				<p>
+					Jadi
+					<code>
+						Alt
+					</code>
+					attribute akan sangat membantu bagi penyandang disabilitas seperti
+					tuna netra untuk menavigasikan gambar pada sebuah website dengan lebih
+					mudah.
+				</p>
+
+				<button id="generate-alt" class="generate-alt-button">
+					Generate attribute alt
+				</button>
+
+				<p class="status">Status: Belum ada <code>alt</code> attribute.</p>
+			</div>
+
+			<div class="image-wrapper">
+				<img tabindex="0" id="picture-1" src="/cat.jpeg" alt="" />
+				<img
+					tabindex="0"
+					id="picture-2"
+					src="/2024-07-14T13:57:24Z.jpg"
+					alt=""
+				/>
+			</div>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
